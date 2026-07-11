@@ -1,35 +1,4 @@
 ```abap
-*======================================================================
-* COMMENT HEADER
-*----------------------------------------------------------------------
-* PROGRAM ID          : ZCFIR_JOURNAL_UPLOAD_NP
-* APPLICATION NAME    : FI
-* AUTHOR              : Kelly
-* TRANSACTION         : ZFII_JOURNAL_NP
-* PROGRAM TYPE        : REPORT PROGRAM
-* INPUT FILES         : N/A
-* OUTPUT FILES        : N/A
-* DEVELOPMENT CLASS   : ZCMOC_ERP1_FI
-* MESSAGE CLASS       : zfi_msg
-* REQUESTED BY        : 张湉
-* DESCRIPTION         : FI-Journal Upload (Negative Posting)
-* PROGRAM PURPOSE     : FI-Journal Upload (Negative Posting)
-*----------------------------------------------------------------------
-* FUNCTIONAL SPECIFICATION
-*   洛钼ERP项目_功能说明书_TFM ZFII_JOURNAL_UPLOAD批导工具增加反记账字段_20240201-V1.0
-*----------------------------------------------------------------------
-* TECHNICAL SPECIFICATION
-*   洛钼ERP TFM 运维_技术说明书_预制凭证批导与过账功能
-*======================================================================
-* MODIFICATIONS LOG:
-*----------------------------------------------------------------------
-*  Ver.  Date        TR.        CR.     Author & Comment
-*----------------------------------------------------------------------
-*  000  2024/03/04  G4DK921514 CH#1321  Kelly    初始创建copy from transaction ZFII_JOURNAL_UPLOAD
-*C-001  2025/03/25  G4DK943479 CH#960   Kelly    Dump优化
-*----------------------------------------------------------------------
-*C-002  2026/07/03  G4DK946564  CH-1047  Walker  add material
-*----------------------------------------------------------------------
 REPORT zcfir_journal_upload_np MESSAGE-ID zfi_msg.
 
 INCLUDE zcfir_journal_upload_np_top.
@@ -106,36 +75,6 @@ END-OF-SELECTION.
 ```
 
 ```abap
-*======================================================================
-* COMMENT HEADER
-*----------------------------------------------------------------------
-* PROGRAM ID          : ZCFIR_JOURNAL_UPLOAD_NP
-* APPLICATION NAME    : FI
-* AUTHOR              : Kelly
-* TRANSACTION         : ZFII_JOURNAL_NP
-* PROGRAM TYPE        : REPORT PROGRAM
-* INPUT FILES         : N/A
-* OUTPUT FILES        : N/A
-* DEVELOPMENT CLASS   : ZCMOC_ERP1_FI
-* MESSAGE CLASS       : zfi_msg
-* REQUESTED BY        : 张湉
-* DESCRIPTION         : FI-Journal Upload (Negative Posting)
-* PROGRAM PURPOSE     : FI-Journal Upload (Negative Posting)
-*----------------------------------------------------------------------
-* FUNCTIONAL SPECIFICATION
-*   洛钼ERP项目_功能说明书_TFM ZFII_JOURNAL_UPLOAD批导工具增加反记账字段_20240201-V1.0
-*----------------------------------------------------------------------
-* TECHNICAL SPECIFICATION
-*   洛钼ERP TFM 运维_技术说明书_预制凭证批导与过账功能
-*======================================================================
-* MODIFICATIONS LOG:
-*----------------------------------------------------------------------
-*  Ver.  Date        TR.        CR.     Author & Comment
-*----------------------------------------------------------------------
-*  000  2024/03/04  G4DK921514 CH#1321  Kelly    初始创建copy from transaction ZFII_JOURNAL_UPLOAD
-*----------------------------------------------------------------------
-*----------------------------------------------------------------------
-
 "Constant definition
 CONSTANTS gc_x VALUE 'X' .
 CONSTANTS gc_koart_gl       TYPE koart VALUE 'S'.
@@ -231,35 +170,6 @@ DATA gt_extension2 TYPE TABLE OF bapiparex.                 "CH-1321 +
 ```
 
 ```abap
-*======================================================================
-* COMMENT HEADER
-*----------------------------------------------------------------------
-* PROGRAM ID          : ZCFIR_JOURNAL_UPLOAD_NP
-* APPLICATION NAME    : FI
-* AUTHOR              : Kelly
-* TRANSACTION         : ZFII_JOURNAL_NP
-* PROGRAM TYPE        : REPORT PROGRAM
-* INPUT FILES         : N/A
-* OUTPUT FILES        : N/A
-* DEVELOPMENT CLASS   : ZCMOC_ERP1_FI
-* MESSAGE CLASS       : zfi_msg
-* REQUESTED BY        : 张湉
-* DESCRIPTION         : FI-Journal Upload (Negative Posting)
-* PROGRAM PURPOSE     : FI-Journal Upload (Negative Posting)
-*----------------------------------------------------------------------
-* FUNCTIONAL SPECIFICATION
-*   洛钼ERP项目_功能说明书_TFM ZFII_JOURNAL_UPLOAD批导工具增加反记账字段_20240201-V1.0
-*----------------------------------------------------------------------
-* TECHNICAL SPECIFICATION
-*   洛钼ERP TFM 运维_技术说明书_预制凭证批导与过账功能
-*======================================================================
-* MODIFICATIONS LOG:
-*----------------------------------------------------------------------
-*  Ver.  Date        TR.        CR.     Author & Comment
-*----------------------------------------------------------------------
-*  000  2024/03/04  G4DK921514 CH#1321  Kelly    初始创建copy from transaction ZFII_JOURNAL_UPLOAD
-*----------------------------------------------------------------------
-*----------------------------------------------------------------------
 *&---------------------------------------------------------------------*
 *& FORM frm_upload_file
 *&---------------------------------------------------------------------*
